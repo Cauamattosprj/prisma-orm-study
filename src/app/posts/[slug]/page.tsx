@@ -9,12 +9,11 @@ export default async function PostPage({ params }) {
         },
     });
 
-
     return (
         <>
             <div className="text-center items-center justify-center mt-96 gap-12 flex flex-col">
                 <div>
-                    <span className="text-xs text-white/20">{post.id}</span>
+                    <span className="text-xs text-white/20">{post?.authorUserName}</span>
                     <h2 className="text-3xl text-green-600">{post?.title}</h2>
                     <p>{post?.content}</p>
                 </div>
